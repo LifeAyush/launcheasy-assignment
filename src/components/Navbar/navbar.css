@@ -1,0 +1,105 @@
+.nav {
+  display: inline-flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 8px;
+  padding: 8px 120px;
+  width: 100%;
+  border-bottom: 1px solid #e0e0e0;
+}
+.mobile-ham {
+  display: none;
+}
+.nav-logo {
+  width: 152px;
+  object-fit: cover;
+  padding: 12px 0px;
+}
+.nav-items {
+  display: inline-flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 32px;
+}
+.nav-item {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.nav-item:hover > .nav-item-text {
+  color: blue;
+}
+.nav-item:hover > .nav-item-logo {
+  background-image: url(../../assets/logos/dropdownHoverLogo.svg);
+}
+.nav-item-text {
+  color: var(--Neutrals-Grey-100, #161616);
+  font-family: Helvetica;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+}
+.nav-item-logo {
+  width: 24px;
+  height: 24px;
+  background-image: url(../../assets/logos/dropdownLogo.svg);
+}
+.nav-cta {
+  display: flex;
+  padding: 12px 16px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 6px;
+  background: var(--Neutrals-Grey-100, #161616);
+  box-shadow: 0px 1px 2px 0px rgba(22, 22, 22, 0.05);
+  color: var(--Neutrals-White, #fff);
+  font-family: Helvetica;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%;
+}
+.free-tag {
+  display: flex;
+  padding: 2px 8px 4px 8px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  border-radius: 4px;
+  background: var(--orange-orange-50-main, #f18d13);
+  color: var(--Neutrals-White, #fff);
+  margin-right: -24px;
+  font-family: Helvetica;
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 128.571%;
+}
+
+@media screen and (max-width: 1200px) {
+  .nav {
+    padding: 8px 40px;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .nav {
+    padding: 8px 24px;
+  }
+  .nav-items {
+    gap: 12px;
+  }
+  .free-tag {
+    margin-right: -4px;
+  }
+}
+@media screen and (max-width: 860px) {
+  .nav-items {
+    display: none;
+  }
+  .mobile-ham {
+    display: block;
+    width: 48px;
+    object-fit: cover;
+  }
+}
