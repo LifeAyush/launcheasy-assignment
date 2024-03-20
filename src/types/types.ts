@@ -1,3 +1,5 @@
+import { StaticImageData } from "next/image";
+
 export interface NavItem {
   id: number;
   text: string;
@@ -18,4 +20,12 @@ export interface MarkteingTool {
   text: string;
   subtext: string;
   bgColor: string;
+}
+export interface MarketingRecipe {
+  id: number;
+  img: StaticImageData;
+  tag: string;
+  title: string;
+  para: string;
+  cta: string;
 }

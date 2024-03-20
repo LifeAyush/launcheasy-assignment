@@ -12,6 +12,8 @@
   box-sizing: border-box;
 }
 
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap");
+
 @layer utilities {
   .text-balance {
     text-wrap: balance;
@@ -21,7 +23,7 @@
 .app-flex {
   display: flex;
   flex-direction: column;
-  gap: 80px;
+  gap: 60px;
   justify-content: center;
   align-items: center;
 }

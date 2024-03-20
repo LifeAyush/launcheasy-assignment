@@ -124,7 +124,7 @@
 @media screen and (max-width: 700px) {
   .wl {
     width: 100%;
-    padding: 24px;
+    padding: 0px 24px 24px 24px;
   }
   .wl-hand-top {
     display: block;

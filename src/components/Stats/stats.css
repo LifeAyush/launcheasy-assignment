@@ -62,7 +62,7 @@
 }
 @media screen and (max-width: 1000px) {
   .stats {
-    padding: 80px 24px;
+    padding: 0px 24px;
   }
   .stats-item {
     width: 160px;
