@@ -1,0 +1,114 @@
+.stats {
+  display: flex;
+  padding: 80px 120px;
+  align-items: center;
+  gap: 24px;
+  justify-content: space-between;
+}
+.stats-text {
+  color: var(--Neutrals-Grey-100, #161616);
+  font-family: Helvetica;
+  font-size: 3rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 116.667%;
+  letter-spacing: -0.96px;
+  width: 400px;
+  flex-shrink: 0;
+}
+.stats-flex {
+  display: flex;
+  align-items: flex-start;
+  gap: 24px;
+  flex-shrink: 0;
+}
+.stats-item {
+  width: 214px;
+  height: 198px;
+  display: flex;
+  padding: 24px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+  border-radius: 16px;
+  border: 1px solid var(--Blue-Blue-20, #d0e2ff);
+  background: var(--Neutrals-White, #fff);
+}
+.stats-item-text {
+  color: var(--Neutrals-Grey-80, #393939);
+  font-family: Helvetica Neue;
+  font-size: 4rem;
+  font-style: normal;
+  font-weight: 200;
+  line-height: 100%;
+  letter-spacing: -1.92px;
+}
+.stats-item-subtext {
+  color: var(--Neutrals-Grey-60, #6f6f6f);
+  font-family: Helvetica Neue;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 137.5%;
+}
+@media screen and (max-width: 1200px) {
+  .stats {
+    padding: 80px 40px;
+  }
+  .stats-text {
+    font-size: 2rem;
+    width: 260px;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .stats {
+    padding: 80px 24px;
+  }
+  .stats-item {
+    width: 160px;
+    height: 148px;
+  }
+  .stats-item-text {
+    font-size: 2.5rem;
+  }
+  .stats-item-subtext {
+    font-size: 0.875rem;
+  }
+}
+@media screen and (max-width: 860px) {
+  .stats-text {
+    font-size: 3rem;
+    width: 80%;
+  }
+  .stats {
+    flex-direction: column;
+    gap: 40px;
+  }
+  .stats-item-text {
+    font-size: 3.5rem;
+  }
+  .stats-item-subtext {
+    font-size: 1rem;
+  }
+  .stats-item {
+    width: 214px;
+    height: 198px;
+  }
+}
+@media screen and (max-width: 700px) {
+  .stats-flex {
+    flex-direction: column;
+  }
+  .stats-item {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 500px) {
+  .stats-flex {
+    width: 100%;
+  }
+  .stats-text {
+    width: 100%;
+    font-size: 2.5rem;
+  }
+}

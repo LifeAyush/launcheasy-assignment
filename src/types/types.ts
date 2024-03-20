@@ -8,3 +8,8 @@ export interface FooterItem {
   title: string;
   links: string[];
 }
+export interface StatsItem {
+  id: number;
+  text: string;
+  subtext: string;
+}
