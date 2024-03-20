@@ -39,11 +39,13 @@
   font-style: normal;
   font-weight: 400;
   line-height: 150%;
+  transition: 150ms ease-in;
 }
 .nav-item-logo {
   width: 24px;
   height: 24px;
   background-image: url(../../assets/logos/dropdownLogo.svg);
+  transition: 150ms ease-in;
 }
 .nav-cta {
   display: flex;

@@ -3,3 +3,8 @@ export interface NavItem {
   text: string;
   isDropdown: boolean;
 }
+export interface FooterItem {
+  id: number;
+  title: string;
+  links: string[];
+}
