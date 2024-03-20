@@ -55,7 +55,7 @@
 .newsletter-main-sub-image {
   width: 30px;
   object-fit: cover;
-  animation: upDown 1s ease-in-out forwards infinite;
+  animation: upDown 1s linear forwards infinite;
 }
 @keyframes upDown {
   0% {

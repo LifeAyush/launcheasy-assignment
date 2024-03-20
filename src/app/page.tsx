@@ -3,6 +3,7 @@ import Navbar from "@/components/Navbar/Navbar";
 import "./globals.css";
 import Stats from "@/components/Stats/Stats";
 import JoinWaitlist from "@/components/JoinWaitlist/JoinWaitlist";
+import MarketingTools from "@/components/MarketingTools/MarketingTools";
 
 export default function Home() {
   return (
@@ -10,6 +11,7 @@ export default function Home() {
       <Navbar />
       <div className="app-flex">
         <Stats />
+        <MarketingTools />
         <JoinWaitlist />
       </div>
       <Footer />

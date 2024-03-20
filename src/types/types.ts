@@ -13,3 +13,9 @@ export interface StatsItem {
   text: string;
   subtext: string;
 }
+export interface MarkteingTool {
+  id: number;
+  text: string;
+  subtext: string;
+  bgColor: string;
+}
