@@ -6,6 +6,7 @@ import JoinWaitlist from "@/components/JoinWaitlist/JoinWaitlist";
 import MarketingTools from "@/components/MarketingTools/MarketingTools";
 import MarketingRecipies from "@/components/MarketingRecipies/MarketingRecipies";
 import Hero from "@/components/Hero/Hero";
+import SiteCarousel from "@/components/SiteCarousel/SiteCarousel";
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
       <Navbar />
       <div className="app-flex">
         <Hero />
+        <SiteCarousel />
         <MarketingRecipies />
         <Stats />
         <MarketingTools />

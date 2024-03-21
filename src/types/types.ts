@@ -29,3 +29,8 @@ export interface MarketingRecipe {
   para: string;
   cta: string;
 }
+export interface SiteCarouselItem {
+  id: number;
+  title: string;
+  img: StaticImageData;
+}

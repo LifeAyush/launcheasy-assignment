@@ -61,7 +61,7 @@
 }
 .mr-top-flex-btm {
   color: var(--Neutrals-Grey-70, #525252);
-  font-family: Helvetica ;
+  font-family: Helvetica;
   font-size: 1.25rem;
   font-style: normal;
   font-weight: 400;
@@ -148,7 +148,7 @@
 }
 .mr-car-btm-para {
   color: var(--Neutrals-Grey-70, #525252);
-  font-family: Helvetica ;
+  font-family: Helvetica;
   font-size: 1rem;
   font-style: normal;
   font-weight: 400;
@@ -171,6 +171,9 @@
   .mr-top-flex {
     width: 100%;
   }
+  .mr-card-display {
+    justify-content: center;
+  }
 }
 @media screen and (max-width: 500px) {
   .mr {
@@ -180,7 +183,7 @@
   .mr-top-flex-middle {
     font-size: 2.7rem;
   }
-  .mr-top-cta{
+  .mr-top-cta {
     width: 100%;
   }
 }

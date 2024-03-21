@@ -55,6 +55,7 @@
   font-weight: 700;
   line-height: 150%;
   flex-shrink: 0;
+  cursor: pointer;
 }
 .hero-btm-subtext {
   color: var(--Neutrals-Grey-40, #a8a8a8);
