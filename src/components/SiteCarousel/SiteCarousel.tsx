@@ -1,5 +1,5 @@
 "use client";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Image from "next/image";
 import "./siteCarousel.css";
 import { SiteCarouselData } from "./SiteCarouselData";
@@ -23,6 +23,55 @@ export default function SiteCarousel() {
       setActive((prev) => prev + 1);
     }
   };
+
+  useEffect(() => {
+    const screen = document.querySelectorAll<HTMLElement>(".sc-btm-img")[0];
+    const container = document.querySelectorAll<HTMLElement>(".sc")[0];
+    const custom = () => {
+      transform(container);
+    };
+    const transform = (elem: HTMLElement) => {
+      const offset = elem.offsetTop;
+      let percentage = ((window.scrollY - offset) / window.innerHeight) * 100;
+      console.log(percentage);
+      if (percentage < 50 && percentage > -50) {
+        screen.style.scale = "1";
+        screen.style.transform = "translateY(20px)";
+        container.style.borderRadius = "24px";
+        if (window.innerWidth >= 1200) {
+          container.style.width = "calc(100% - 240px)";
+        } else if (window.innerWidth >= 1000) {
+          container.style.width = "calc(100% - 80px)";
+        } else {
+          container.style.width = "calc(100%)";
+          container.style.borderRadius = "0px";
+          screen.style.transform = "translateY(5px)";
+        }
+      } else {
+        container.style.borderRadius = "0px";
+        container.style.width = "100%";
+        if (window.innerWidth >= 1200) {
+          screen.style.scale = "1.30";
+          screen.style.transform = "translateY(-50px)";
+        } else if (window.innerWidth >= 1000) {
+          screen.style.scale = "1.30";
+          screen.style.transform = "translateY(-120px)";
+        } else if (window.innerWidth >= 500) {
+          screen.style.scale = "1.02";
+          screen.style.transform = "translateY(-120px)";
+        } else {
+          screen.style.scale = "1.1";
+          screen.style.transform = "translateY(-100px)";
+        }
+      }
+    };
+    window.addEventListener("scroll", custom);
+
+    return () => {
+      window.removeEventListener("scroll", custom);
+    };
+  }, []);
+
   return (
     <div className="sc">
       <div className="sc-top">
