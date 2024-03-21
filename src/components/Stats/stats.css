@@ -4,6 +4,7 @@
   align-items: center;
   gap: 24px;
   justify-content: space-between;
+  position: relative;
 }
 .stats-text {
   color: var(--Neutrals-Grey-100, #161616);

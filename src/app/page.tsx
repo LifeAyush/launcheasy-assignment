@@ -7,6 +7,8 @@ import MarketingTools from "@/components/MarketingTools/MarketingTools";
 import MarketingRecipies from "@/components/MarketingRecipies/MarketingRecipies";
 import Hero from "@/components/Hero/Hero";
 import SiteCarousel from "@/components/SiteCarousel/SiteCarousel";
+import Image from "next/image";
+import mesh from "@/assets/mesh.svg";
 
 export default function Home() {
   return (
@@ -16,6 +18,7 @@ export default function Home() {
         <Hero />
         <SiteCarousel />
         <MarketingRecipies />
+        <Image src={mesh} alt="mesh" className="mesh" />
         <Stats />
         <MarketingTools />
         <JoinWaitlist />

@@ -171,3 +171,8 @@
     width: 100%;
   }
 }
+@media screen and (max-width: 500px) {
+  .newsletter-main-sub-flex-text {
+    font-size: 1.5rem;
+  }
+}

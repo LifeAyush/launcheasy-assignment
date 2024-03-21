@@ -8,7 +8,7 @@ import circleFrontMain from "@/assets/circleFrontMain.svg";
 import siteCarouselImg1 from "@/assets/siteCarouselImg1.png";
 
 export default function SiteCarousel() {
-  const [active, setActive] = useState(1);
+  const [active, setActive] = useState<number>(1);
   const moveCarouselBackward = () => {
     if (active === 1) {
       setActive(3);
@@ -33,7 +33,6 @@ export default function SiteCarousel() {
     const transform = (elem: HTMLElement) => {
       const offset = elem.offsetTop;
       let percentage = ((window.scrollY - offset) / window.innerHeight) * 100;
-      console.log(percentage);
       if (percentage < 50 && percentage > -50) {
         screen.style.scale = "1";
         screen.style.transform = "translateY(20px)";

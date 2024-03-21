@@ -26,4 +26,13 @@
   gap: 60px;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
+}
+.mesh {
+  position: absolute;
+  z-index: -1;
+  left: 0;
+  top: 300vh;
+  width: 120vw;
+  opacity: 0.5;
 }
