@@ -36,7 +36,7 @@
 }
 .stats-item-text {
   color: var(--Neutrals-Grey-80, #393939);
-  font-family: Helvetica Neue;
+  font-family: Helvetica;
   font-size: 4rem;
   font-style: normal;
   font-weight: 200;
@@ -45,7 +45,7 @@
 }
 .stats-item-subtext {
   color: var(--Neutrals-Grey-60, #6f6f6f);
-  font-family: Helvetica Neue;
+  font-family: Helvetica;
   font-size: 1rem;
   font-style: normal;
   font-weight: 400;

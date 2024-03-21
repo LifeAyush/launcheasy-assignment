@@ -3,6 +3,7 @@ import footerLogo from "@/assets/logos/footerLogo.svg";
 import Image from "next/image";
 import { FooterData } from "./FooterData";
 import Newsletter from "../Newsletter/Newsletter";
+import Link from "next/link";
 
 export default function Footer() {
   return (
@@ -21,10 +22,21 @@ export default function Footer() {
               </div>
             </div>
             <div className="footer-top-info-socials">
-              <div className="footer-top-info-socials-logo-1" />
-              <div className="footer-top-info-socials-logo-2" />
-              <div className="footer-top-info-socials-logo-3" />
-              <div className="footer-top-info-socials-logo-4" />
+              <Link
+                href="https://linkedin.com/company/launcheazy"
+                target="_blank"
+              >
+                <div className="footer-top-info-socials-logo-1" />
+              </Link>
+              <Link href="https://facebook.com/launcheazy" target="_blank">
+                <div className="footer-top-info-socials-logo-2" />
+              </Link>
+              <Link href="https://instagram.com/launch.eazy" target="_blank">
+                <div className="footer-top-info-socials-logo-3" />
+              </Link>
+              <Link href="mailto:contact@launcheazy.com" target="_blank">
+                <div className="footer-top-info-socials-logo-4" />
+              </Link>
             </div>
           </div>
           <div className="footer-top-navigation">

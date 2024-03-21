@@ -20,7 +20,7 @@
 .wl-subtext {
   color: var(--Neutrals-Grey-60, #6f6f6f);
   text-align: center;
-  font-family: Helvetica Neue;
+  font-family: Helvetica;
   font-size: 1.25rem;
   font-style: normal;
   font-weight: 400;
@@ -119,6 +119,7 @@
   .wl {
     width: 600px;
     padding: 0;
+    padding-bottom: 40px;
   }
 }
 @media screen and (max-width: 700px) {

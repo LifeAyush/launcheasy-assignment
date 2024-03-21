@@ -50,7 +50,7 @@
 }
 .mt-text-flex-btm {
   color: var(--Neutrals-Grey-70, #525252);
-  font-family: Helvetica Neue;
+  font-family: Helvetica ;
   font-size: 1.25rem;
   font-style: normal;
   font-weight: 400;
@@ -144,7 +144,7 @@
 }
 .mt-carousel-card-subtext {
   color: var(--Neutrals-Grey-70, #525252);
-  font-family: "Helvetica Neue";
+  font-family: Helvetica ;
   font-size: 1rem;
   font-style: normal;
   font-weight: 400;
