@@ -2,7 +2,11 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 ## Deployed on Vercel
 
-This project is deployed using vercel, you can check it out at [Next.js](https://nextjs.org/)
+This project is deployed using vercel, you can check it out at [https://launcheasy-assignment.vercel.app/](https://launcheasy-assignment.vercel.app/)
+
+## Website Demo
+
+![](https://github.com/LifeAyush/zywa/blob/main/demo.gif)
 
 ## Running the project on your local server
 
